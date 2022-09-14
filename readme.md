@@ -1,0 +1,2 @@
+# Submission Repository for Advanced Golang Mini Course by Alterra Academy
+This repository is for task submission during the course. Other task that i work during the course will not be uploaded here, there will maybe be another repository for them. Folders in repo will be saperated into days of the task submission for.
