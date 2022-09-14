@@ -10,6 +10,8 @@ services:
       - 8080:8080
     depends_on:
       - "db"
+    networks:
+      - agmc-alterra
   db:
     image: mysql:8.0
     environment:
@@ -19,6 +21,12 @@ services:
       - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
     ports:
       - 3306:3306
+    networks:
+      - agmc-alterra
+
+networks:
+  agmc-alterra:
+    driver: bridge
 
 volumes:
   db-data:
